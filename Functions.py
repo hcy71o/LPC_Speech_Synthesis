@@ -37,7 +37,7 @@ def Center_Clip(signal, c_):
 def Pitch_detect(signal, window, sr, overlap=0.5, center_clip=0.68, th_=0.55):
 
     win_len = len(window)
-    overlap_length = int(len(window) * overlap_percent)
+    overlap_length = int(len(window) * overlap)
 
     # * zero-padding
     if len(signal) % overlap_length != 0:
