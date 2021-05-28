@@ -8,6 +8,7 @@
 
 # Speech Analysis
 ### - Get unvoiced/voiced flag information, LPC coefficients, and detect pitch
+    Speech_analysis.ipynb
 
 ## *Vocal tract modelling (AR modelling)
 <img src = "./Figures/Linear_prediction.jpeg" width="70%">
@@ -18,3 +19,5 @@
 
 # Speech Synthesis
 #### - Synthesize speech using LPC information and excitation
+    Speech_synthesis.ipynb
+
