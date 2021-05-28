@@ -11,7 +11,7 @@
     Speech_analysis.ipynb
 
 ## *Vocal tract modelling (AR modelling)
-<img src = "./Figures/Linear_prediction.jpeg" width="70%">
+<img src = "./Figures/Linear_prediction.jpeg" width="90%">
 
 ### Autocorrelation Method
 
