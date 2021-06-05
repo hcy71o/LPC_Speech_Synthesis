@@ -1,3 +1,4 @@
+from scipy.linalg import solve_toeplitz, toeplitz
 import numpy as np
 
 
@@ -99,3 +100,10 @@ def medianfilter(signal):  # * 5-point median filter
     #     plt.title('Pitch contour')
     #     plt.grid(True)
     return med_values
+
+
+def Levinson(w_sig, p):
+    r_list = [Autocor(w_sig, i) for i in range(p)]
+    b_list = [Autocor(w_sig, i) for i in range(1, p+1)]
+    LPC = solve_toeplitz((r_list, r_list), b_list)
+    return LPC
